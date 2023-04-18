@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+		'Helvetica Neue', sans-serif;
+	height: 100vh;
+}
+
+.container {
+	width: 1200px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 18px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav ul li {
+	list-style: none;
+	margin: 0px 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	padding: 6px 12px;
+}
+
+nav ul li a#signup {
+	background-color: #0066ff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	color: white;
+	font-weight: 600;
+}
+
+/* form styling */
+main {
+	height: calc(92vh - 1px);
+	background-color: pink;
+}
+
+main .signupForm {
+	background-color: #191919ba;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5 ease;
+	-webkit-transition: all 0.5 ease;
+	-moz-transition: all 0.5 ease;
+	-ms-transition: all 0.5 ease;
+	-o-transition: all 0.5 ease;
+}
+
+@keyframes popUp {
+	0% {
+		transform: scale(0.3);
+		-webkit-transform: scale(0.3);
+		-moz-transform: scale(0.3);
+		-ms-transform: scale(0.3);
+		-o-transform: scale(0.3);
+	}
+	100% {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+	}
+}
+
+main .signupForm form {
+	width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+	position: relative;
+	animation: popUp 1s ease-in-out;
+	-webkit-animation: popUp 1s ease-in-out;
+}
+
+main .signupForm form #close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	margin: 10 10px 0px 0px !important;
+}
+
+main .signupForm {
+	display: none;
+}
+
+main .show {
+	display: flex;
+}

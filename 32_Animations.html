@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/*
+    @keyframes
+    animation-name
+    animation-duration
+    animation-delay
+    animation-iteration-count
+    animation-direction
+    animation-timing-function
+    animation-fill-mode
+    */
+			.box {
+				height: 100px;
+				width: 100px;
+				background-color: red;
+				animation-name: sample;
+				animation-duration: 2s;
+			}
+
+			@keyframes sample {
+				from {
+					background-color: red;
+					height: 100px;
+					width: 200px;
+				}
+				to {
+					background-color: blue;
+					height: 200px;
+					width: 400px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>
